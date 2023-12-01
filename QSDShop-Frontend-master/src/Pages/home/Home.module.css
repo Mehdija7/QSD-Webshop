@@ -1,0 +1,413 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  display: flex;
+  background-color: var(--home-bg);
+}
+
+.wrapperHome {
+  overflow-x: hidden;
+  background-color: var(--home-bg);
+}
+.homeProductImage {
+  object-fit: cover;
+}
+.imageDiv1 {
+  height: 500px;
+  height: 500px;
+  width: 100%;
+  background-image: url("../../Images/web_shop1.webp");
+  background-size: cover;
+  background-position: center top 35%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.imageDiv1:hover {
+  filter: brightness(80%);
+}
+.shadowDiv1 {
+  background-color: var(--shadow-div);
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+}
+.textDiv {
+  margin-left: 100px;
+}
+.text1 {
+  color: var(--primary-color);
+  letter-spacing: 3px;
+  font-family: "TrainOne", sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+.text2 {
+  color: var(--primary-color);
+  letter-spacing: 3px;
+  font-family: "TrainOne", sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  width: 100%;
+  height: 250px;
+  background-color: var(--home-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuPhotos {
+  height: 150px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo {
+  width: 33%;
+  height: 150px;
+  background-image: url("../../Images/women.webp");
+  background-size: cover;
+  background-position: center top 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center bottom 40%;
+  /* filter:brightness(150%);  */
+  opacity: 50%;
+  transition: 0.3 ease;
+}
+.photo:hover {
+  opacity: 100%;
+}
+.photo1 {
+  width: 34%;
+  height: 150px;
+  background-image: url("../../Images/men.webp");
+  background-size: cover;
+  background-position: center top 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center bottom 40%;
+  opacity: 42%;
+  transition: 0.3 ease;
+}
+.photo1:hover {
+  opacity: 100%;
+}
+.photo2 {
+  width: 33%;
+  height: 150px;
+  background-image: url("../../Images/children.webp");
+  background-size: cover;
+  background-position: center top 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center bottom 40%;
+  opacity: 50%;
+  transition: 0.3 ease;
+}
+.photo2:hover {
+  opacity: 100%;
+}
+.shadow {
+  width: 100%;
+  height: 150px;
+  background-color: var(--white-hover);
+  color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Glory";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadow:hover {
+  background-color: #ffffff00;
+  color: #fff;
+}
+.newItems {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  background-color: var(--home-bg);
+}
+
+.newItemsText {
+  font-family: "Train One";
+  font-weight: 600;
+  color: var(--primary-color-1);
+}
+
+.shopButton {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  height: 45px;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  overflow: hidden;
+  border-radius: 10px;
+  border: none;
+  color: var(--primary-color-1);
+  z-index: 1;
+  transition: 0.5s all ease;
+  height: 50px;
+  width: 200px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+}
+/*Animation for button*/
+.shopButton:hover {
+  color: white;
+  cursor: pointer;
+  border: 0px;
+}
+.shopButton:active {
+  transform: scale(0.85);
+}
+.shopButton:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  top: -100%;
+  background: #379237;
+  transition: all 0.6s ease;
+  z-index: -1;
+  border: none;
+}
+.shopButton:hover:before {
+  top: 0;
+  left: 0;
+  border: 0px;
+  transform: rotate(180deg);
+}
+.shopButton:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  top: 100%;
+  background: #54b435;
+  transition: all 0.6s ease;
+  z-index: -1;
+  color: white;
+}
+.shopButton:hover:after {
+  color: white;
+  top: 0;
+  left: 50%;
+  border: 0px;
+  transform: rotate(180deg);
+}
+
+/* PARALLAX */
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+.parallaxContent {
+  position: relative;
+}
+.parallaxMain {
+  align-items: center;
+  background-color: var(--parallex-bg);
+  display: flex;
+  height: 700px;
+  justify-content: center;
+}
+.parallaxCard {
+  background-color: var(--parallex-card);
+  border-radius: 20px 0 20px 0;
+  height: auto;
+  padding: 10px;
+  width: 42vw;
+  color: var(--parallex-text);
+}
+.parallaxCardBorder {
+  border: 3px solid var(--logo-purple);
+  border-radius: 20px 0 20px 0;
+  padding: 30px 40px;
+  background-color: var(--parallex-card);
+  color: var(--parallex-text);
+}
+.parallaxTitle {
+  color: var(--logo-purple);
+  font-family: Train One, cursive;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: revert;
+}
+.parallaxText {
+  color: var(--parallex-text);
+  font-family: Glory, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+}
+.swiper {
+  --swiper-pagination-color: #0867ff;
+  --swiper-pagination-bullet-inactive-color: #999999;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 1px;
+}
+.img {
+  width: 10%;
+}
+.swiper {
+  height: 400px;
+  width: 80%;
+}
+.swiper img {
+  height: 250px;
+  width: 100%;
+}
+/*NEWS*/
+.homeProductProductCard {
+  background-color: var(--primary-color-3);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* height: 350px;
+  width: 250px; */
+}
+.homeProductProductDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.homeProductProductImage {
+  position: relative;
+  cursor: pointer;
+  height: 65%;
+  overflow: hidden;
+  /* align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 65%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0;
+  width: 100%; */
+}
+.homeProductAbsoluteDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* align-items: center;
+  background-color: initial;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; */
+}
+.homeProductProductPriceDetails {
+  /* display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-between;
+  padding: 0 15px 15px; */
+}
+.homeProductDetails {
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+}
+.homeProductPrice {
+  justify-items: center;
+  background-color: var(--logo-white);
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  font-family: Glory, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 10px;
+  width: 100%;
+}
+.homeProductPrice1 {
+  margin-left: 40%;
+  margin-top: 0px;
+}
+.homeProductTitle {
+  color: var(--primary-text);
+  cursor: pointer;
+  font-family: Glory, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: -10px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.homeProductCategory,
+.homeProductBrand {
+  color: var(--sale-card-text);
+  font-family: Glory, sans-serif;
+  font-size: 15px;
+  margin: 0 0 2px;
+}
+.homeProductAdditional {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.homeProductFavorites {
+  background-color: initial;
+  border: none;
+  color: var(--sale-card-text);
+  font-family: Glory, sans-serif;
+  font-size: 17px;
+}
+.homeProductShop {
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.homeProductButtonBuy {
+  border: none;
+  display: none;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  pointer-events: none;
+}
+.homeProductProductImage:hover .homeProductButtonBuy {
+  display: block;
+}
+
+/*/////////////////////////////////////////////////*/

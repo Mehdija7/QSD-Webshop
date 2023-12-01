@@ -1,0 +1,90 @@
+.loginMain {
+  align-items: center;
+  background-blend-mode: darken;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.loginContainer {
+  background-color: var(--primary-color);
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  height: auto;
+  padding: 10px 50px 30px;
+  width: 400px;
+}
+.loginImg {
+  width: 100%;
+  height: 100%;
+}
+.loginUserDetailsField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.loginEmail {
+  background-color: var(--auth-input);
+  border: 1px solid var(--auth-input-border);
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 30px;
+  margin: 0 0 10px;
+  padding: 0 10px;
+  position: relative;
+  width: 100%;
+  color: var(--primary-text);
+}
+.loginInputPw {
+  background-color: var(--auth-input);
+  border: 1px solid var(--auth-input-border);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: var(--logo-purple);
+  height: 30px;
+  margin: 0 0 10px;
+  padding: 0 10px;
+  position: relative;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.loginPw {
+  position: relative;
+}
+.eyeIcon {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  transform: translateY(-50%);
+}
+
+.buttonLogin {
+  background-color: var(--logo-purple);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  height: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.buttonLogin:disabled {
+  opacity: 0.5;
+}
+.buttonLogin:hover {
+  transform: scale(101%);
+  filter: brightness(90%);
+}
+.loginInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.loginInfo a {
+  font-weight: 500;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}

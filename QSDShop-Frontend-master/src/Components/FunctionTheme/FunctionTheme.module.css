@@ -1,0 +1,11 @@
+.button {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color-1);
+  font-family: "Glory";
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}

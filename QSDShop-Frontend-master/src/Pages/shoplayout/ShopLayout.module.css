@@ -1,0 +1,13 @@
+.main {
+  background-color: var(--cart-bg);
+  height: calc(100% + 200px);
+  height: fit-content;
+  min-height: calc(100vh + 50px);
+  overflow: auto;
+  position: relative;
+  transition: all 0.5s ease;
+  color: var(--primary-color-1);
+}
+.content {
+  margin-top: 40px;
+}

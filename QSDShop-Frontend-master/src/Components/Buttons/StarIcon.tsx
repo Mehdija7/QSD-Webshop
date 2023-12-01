@@ -1,0 +1,21 @@
+import * as React from "react";
+import { useTheme } from "../../Context/ThemeContext";
+
+function IconStar(props: React.SVGProps<SVGSVGElement>) {
+  const mode = useTheme();
+  return (
+    <svg
+      className="star-svg"
+      fill={mode ? "silver" : "gray"}
+      strokeWidth="0"
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+    </svg>
+  );
+}
+
+export default IconStar;

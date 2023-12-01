@@ -1,0 +1,18 @@
+div {
+  margin: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10%;
+  background-color: transparent;
+}
+
+span {
+  margin: 0 5px;
+}

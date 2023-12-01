@@ -1,0 +1,114 @@
+.signUpMain {
+  align-items: center;
+  background: var(--auth-bg-color);
+  background-blend-mode: darken;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.signUpContainer {
+  background-color: var(--primary-color);
+  border-radius: 0 20px 0 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  height: auto;
+  padding: 0 50px 30px;
+  width: 500px;
+}
+.signUpImg {
+  height: 100%;
+  width: 100%;
+}
+.signUpNameField {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.signUpFirstName {
+  background-color: var(--auth-input);
+  border: 1px solid var(--auth-input-border);
+  border-radius: 5px;
+  color: var(--logo-purple);
+  height: 30px;
+  margin: 0 5px 10px 0;
+  padding: 0 10px;
+  width: 100%;
+}
+.signUpLastName {
+  background-color: var(--auth-input);
+  border: 1px solid var(--auth-input-border);
+  border-radius: 5px;
+  color: var(--logo-purple);
+  height: 30px;
+  margin: 0 0 10px 5px;
+  padding: 0 10px;
+  width: 100%;
+}
+.signUpUserDetails {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.signUpInput {
+  background-color: var(--auth-input);
+  border: 1px solid var(--auth-input-border);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: var(--logo-purple);
+  height: 30px;
+  margin: 0 0 10px;
+  padding: 0 10px;
+  width: 100%;
+}
+.signUpPw {
+  position: relative;
+}
+.eyeIcon {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  transform: translateY(-50%);
+}
+.signUpPw2 {
+  position: relative;
+}
+.eyeIcon2 {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  transform: translateY(-50%);
+}
+.signUpButton {
+  background-color: var(--logo-purple);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  height: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.signUpButton:disabled {
+  opacity: 0.5;
+}
+.signUpButton:hover {
+  transform: scale(101%);
+  filter: brightness(90%);
+}
+.error {
+  color: var(--auth-error-primary);
+  font-size: 11px;
+  margin-top: -8px;
+}
+.signUpNameField1 {
+  position: relative;
+  width: 100%;
+}
+.signUpNameField2 {
+  position: relative;
+  width: 100%;
+}
+.loginButton {
+  font-size: larger;
+  justify-content: center;
+  display: flex;
+}

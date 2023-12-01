@@ -1,0 +1,67 @@
+.contactContainer {
+  background-color: var(--home-bg);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.contactImg {
+  align-items: center;
+  background-image: url(/src/Images/home-hero-banner-large.jpeg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.contactImg h1 {
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: var(--primary-color);
+}
+.contactFormContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.contactFormContainer h3 {
+  color: var(--primary-text);
+  margin: 0;
+  font-family: Glory, sans-serif;
+  font-size: 24px;
+  padding-top: 24px;
+}
+.contactForm {
+  width: 700px;
+}
+.contactForm label {
+  color: var(--primary-text);
+  display: block;
+  font-family: Glory, sans-serif;
+  margin-top: 10px;
+}
+.contactForm input,
+.contactMessage {
+  border: 1px solid var(--border-bottom);
+  border-radius: 5px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 5px;
+  width: calc(100% - 10px);
+}
+.contactMessage {
+  max-height: 100px;
+}
+.contactSubmit {
+  background-color: var(--logo-purple);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 15px;
+  width: 150px;
+}

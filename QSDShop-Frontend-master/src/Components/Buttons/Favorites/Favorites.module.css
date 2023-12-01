@@ -1,0 +1,15 @@
+.favorites {
+  align-items: center;
+  background-color: initial;
+  border: none;
+  color: var(--logo-purple);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+}
+.favorites:hover {
+  color: var(--logo-purple);
+  cursor: pointer;
+  transform: scale(1.1);
+}

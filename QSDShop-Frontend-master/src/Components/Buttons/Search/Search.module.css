@@ -1,0 +1,25 @@
+.searchButton {
+  align-items: center;
+  background-color: initial;
+  border: none;
+  color: var(--logo-purple);
+  display: flex;
+  display: none;
+  justify-content: center;
+  padding-top: 4px;
+}
+.searchButton:hover {
+  color: var(--logo-purple);
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.searchButton:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+@media screen and (max-width: 768px) {
+  .searchButton {
+    display: block;
+  }
+}

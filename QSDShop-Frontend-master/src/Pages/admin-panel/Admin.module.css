@@ -1,0 +1,211 @@
+.menu,
+menu.open {
+  width: 5%;
+  background-color: var(--admin-dark-blue);
+  height: 100vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: width 300ms ease-out;
+  min-width: 20px;
+  box-shadow: var(--navbar-shadow) -10px 10px 10px 0;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  border: 1px solid black;
+  border-top: 0;
+  z-index: 10;
+}
+
+.menu.open {
+  width: 250px;
+  align-items: center;
+}
+
+.menu.open a {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  width: 40%;
+}
+
+.sidebarButton {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.header {
+  align-items: flex-start;
+  display: flex;
+  flex: 1 1;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  height: 170px;
+}
+
+.leftContent {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.rightContent {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding-top: 2px;
+  text-align: center;
+}
+.userInfo {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.headerOpen,
+.headerClosed {
+  background-color: var(--admin-dark-blue);
+  border: 0.5px solid var(--search-border-bottom);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px 10px;
+  position: absolute;
+  right: 5px;
+  top: 50px;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.26s ease;
+  width: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerOpen a,
+.headerOpen button {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.headerClosed {
+  transform: scaleY(0);
+}
+
+.toggleButton {
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--admin-dark-blue);
+  font-family: Glory, sans-serif;
+  font-size: 15px;
+}
+
+.adminContainer {
+  position: relative;
+  background-color: var(--primary-color-2);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.adminContent {
+  background-color: var(--primary-background-color);
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 30px;
+  position: relative;
+  transition: width 0.3s;
+  width: 95%;
+}
+
+.adminHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.adminsButton,
+.logOutButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--light-blue);
+  color: white;
+  font-weight: bold;
+  border: 0;
+  font-family: Glory, sans-serif;
+}
+
+.adminsButton:hover,
+.logOutButton:hover {
+  opacity: 90%;
+  transform: scale(1.2);
+  transition: ease-in-out 300ms;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+.table {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: var(--primary-color-1);
+  min-width: 800px;
+  padding: 20px;
+  width: 100%;
+}
+.tableTr {
+  position: relative;
+  text-align: center;
+}
+.tableTr:after {
+  background-color: hsla(0, 1%, 60%, 0.1);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 2.5%;
+  position: absolute;
+  width: 95%;
+}
+.tableTr th {
+  padding-bottom: 20px;
+}
+.table td {
+  padding: 5px;
+  text-align: center;
+}
+
+.table td:after {
+  background-color: hsla(0, 1%, 60%, 0.1);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 2.5%;
+  position: absolute;
+  width: 95%;
+}

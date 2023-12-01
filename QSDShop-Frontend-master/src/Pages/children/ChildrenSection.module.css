@@ -1,0 +1,24 @@
+.content {
+  color: var(--primary-color-1);
+  font-family: Glory, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 0 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--logo-purple);
+  margin-right: 60px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-weight: bolder;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}

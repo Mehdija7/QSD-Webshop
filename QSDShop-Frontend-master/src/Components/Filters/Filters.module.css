@@ -1,0 +1,25 @@
+.container {
+  display: inline-flex;
+}
+.arrow {
+  display: flex;
+  -ms-flex-item-align: end;
+  margin-right: 2px;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  font-family: "Glory";
+}
+.filterWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.listItem {
+  font-weight: inherit;
+}
